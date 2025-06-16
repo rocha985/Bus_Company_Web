@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Solicite uma Cotação | G.M Transportes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="static/CSS/style.css" />
+</head>
+<body class="cotacao-page">
+    <header>
+        <div class="container d-flex justify-content-between align-items-center flex-wrap">
+            <img src="static/imagens/logo.png" alt="Logo da G.M Transportes" class="logo" style="max-height: 80px" />
+            <nav class="d-flex gap-2 align-items-center">
+                <a href="index.html" class="btn btn-outline-light">Home</a>
+                <a href="cotacao.html" class="btn btn-outline-light">Cotação</a>
+                <button id="theme-toggle-btn" class="btn ms-2">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </nav>
+        </div>
+        <div class="header-main text-center">
+            <h1 class="display-4 fw-bold">Faça a sua cotação</h1>
+            <p class="lead mt-3">Coloque os dados da sua viagem e logo após o envio do formulário, nossa equipe entrará em contato.</p>
+        </div>
+    </header>
+
+    <main class="container py-5">
+        <section id="form-detalhes-viagem">
+            <form id="cotacaoForm" action="#" method="post" class="p-4 rounded">
+                <fieldset>
+                    <legend class="text-center mb-4">Detalhes da Viagem</legend>
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Nome Completo <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="nome" name="nome" required />
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="data-ida" class="form-label">Data da Viagem - Ida <span class="text-danger">*</span></label>
+                            <input type="date" class="form-control" id="data-ida" name="data_ida" required />
+                        </div>
+                        <div class="col-md-6">
+                            <label for="data-retorno" class="form-label">Data da Viagem - Retorno <span class="text-danger">*</span></label>
+                            <input type="date" class="form-control" id="data-retorno" name="data_retorno" required />
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="endereco-saida" class="form-label">Endereço de Saída <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="endereco-saida" name="endereco_saida" required />
+                    </div>
+                    <div class="mb-3">
+                        <label for="endereco-destino" class="form-label">Endereço de Destino <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="endereco-destino" name="endereco_destino" required />
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="hora-saida" class="form-label">Hora da Saída <span class="text-danger">*</span></label>
+                            <input type="time" class="form-control" id="hora-saida" name="hora_saida" required />
+                        </div>
+                        <div class="col-md-6">
+                            <label for="hora-retorno" class="form-label">Hora do Retorno <span class="text-danger">*</span></label>
+                            <input type="time" class="form-control" id="hora-retorno" name="hora_retorno" required />
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="quantidade-passageiros" class="form-label">Quantidade de Passageiros <span class="text-danger">*</span></label>
+                        <input type="number" class="form-control" id="quantidade-passageiros" name="quantidade_passageiros" min="1" value="1" required />
+                    </div>
+                    <div class="mb-4">
+                        <label for="telefone" class="form-label">Telefone para Contato <span class="text-danger">*</span></label>
+                        <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required />
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary w-100 btn-cta">Enviar</button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content container">
+            <div class="footer-item">
+                <ul>
+                    <li><i class="fas fa-phone"></i><strong> Contato:</strong></li>
+                    <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/5519998191051" target="_blank">(19) 99819-1051</a></li>
+                    <li>Email: <a href="mailto:ortonabuisness@gmail.com">ortonabuisness@gmail.com</a></li>
+                </ul>
+                <div>
+                    <strong><br />©Todos os direitos reservados</strong>
+                </div>
+            </div>
+            <div class="footer-item">
+                <ul>
+                    <li><strong>Redes Sociais:</strong></li>
+                    <li><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/roxo_rocha/">Instagram</a></li>
+                    <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/gabriel-gardeazabal-ortona-8332511ab" target="_blank">LinkedIn</a></li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <ul>
+                    <li><strong>Endereço:</strong></li>
+                    <li><a href="https://www.google.com/maps/search/?api=1&query=Av.+Dr.+Ênio+Pires+de+Camargo,+Capivari-SP" target="_blank">Av. Dr. Ênio Pires de Camargo - Capivari-SP</a></li>
+                </ul>
+            </div>
+            <div class="footer-image">
+                <img src="static/imagens/logo.png" alt="Logo G.M Transportes" class="footer-img" />
+            </div>
+            <div class="footer-item">
+                <ul>
+                    <li><strong>Criadores:</strong></li>
+                    <li><i class="fab fa-github"></i> <a href="https://github.com/Gortona-dev">Gabriel Ortona</a></li>
+                    <li><i class="fab fa-github"></i> <a href="https://github.com/rocha985" target="_blank">Matheus Rocha</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="successModalLabel">Enviado com Sucesso!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Seus detalhes foram enviados. Nossa equipe entrará em contato em breve.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-cta" id="redirectHomeBtn">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const dataIdaInput = document.getElementById('data-ida');
+            const dataRetornoInput = document.getElementById('data-retorno');
+            dataIdaInput.addEventListener('change', function() {
+                dataRetornoInput.min = dataIdaInput.value;
+                if (dataRetornoInput.value && dataRetornoInput.value < dataIdaInput.value) {
+                    dataRetornoInput.value = '';
+                }
+            });
+
+            const cotacaoForm = document.getElementById('cotacaoForm');
+            const successModal = new bootstrap.Modal(document.getElementById('successModal'));
+            const redirectBtn = document.getElementById('redirectHomeBtn');
+
+            cotacaoForm.addEventListener('submit', function (e) {
+                e.preventDefault();
+                const inputs = cotacaoForm.querySelectorAll('input');
+                let valid = true;
+                inputs.forEach((input) => {
+                    if (!input.value.trim()) valid = false;
+                });
+
+                if (valid) {
+                    successModal.show();
+                    cotacaoForm.reset();
+                } else {
+                    alert('Por favor, preencha todos os campos obrigatórios.');
+                }
+            });
+            
+            redirectBtn.addEventListener('click', function() {
+                window.location.href = 'index.html';
+            });
+        });
+    </script>
+    <script src="static/js/theme-toggle.js"></script>
+</body>
+</html>
