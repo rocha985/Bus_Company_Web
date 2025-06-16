@@ -268,11 +268,7 @@ body.dark-theme header .btn#theme-toggle-btn {
 
   .header-main h1 {
     font-size: 2em;
-  }
-
-  .text-shadow {
-    background-color: rgba(0, 0, 0, 0.4);
-    padding: 0;
+    text-align: center;
   }
 
   .header-main p {
